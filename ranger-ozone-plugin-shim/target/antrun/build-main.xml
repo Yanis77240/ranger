@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo file="/home/stephan/Documents/github/tdp-alliage-jenkins/ranger/ranger-ozone-plugin-shim/target/version" message="2.0.1-TDP-0.1.0-SNAPSHOT"/>
+</target>
+</project>

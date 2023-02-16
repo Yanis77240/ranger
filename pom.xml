@@ -588,11 +588,11 @@
         </profile>
     </profiles>
     <distributionManagement>
-        <repository>
-            <id>${distMgmtStagingId}</id>
-            <name>${distMgmtStagingName}</name>
-            <url>${distMgmtStagingUrl}</url>
-        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>my Nexus</name>
+            <url>http://172.19.0.2:8081/repository/my-maven-test/</url>
+        </snapshotRepository>
     </distributionManagement>
     <repositories>
         <repository>
@@ -613,6 +613,11 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>nexus</id>
+            <name>my Nexus</name>
+            <url>http://172.19.0.2:8081/repository/my-maven-test/</url>
         </repository>
         <!--
     <repository>
