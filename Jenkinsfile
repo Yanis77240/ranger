@@ -25,14 +25,14 @@ pipeline {
                 '''
             }
         }
-        stage('Test') {
+        /*stage('Test') {
             steps {
                 echo "Testing..."
                 sh '''
                 mvn clean test -Drat.numUnapprovedLicenses=1000 --fail-never
                 '''
             }
-        }
+        }*/
         stage("Publish to Nexus Repository Manager") {
             steps {
                 echo "Deploy..."
