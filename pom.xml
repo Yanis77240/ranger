@@ -69,6 +69,8 @@
         </mailingList>
     </mailingLists>
     <properties>
+        <nexusRepoName>my nexus</nexusRepoName>
+        <nexusRepoUrl>http://10.110.4.212:8081/repository/my-maven-test/</nexusRepoUrl>
         <maven.version.required>3.3.3</maven.version.required>
         <java.version.required>1.8</java.version.required>
         <javac.source.version>1.8</javac.source.version>
@@ -590,8 +592,8 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus</id>
-            <name>my Nexus</name>
-            <url>http://172.19.0.2:8081/repository/my-maven-test/</url>
+            <name>${nexusRepoName}</name>
+            <url>${nexusRepoUrl}</url>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
@@ -616,8 +618,8 @@
         </repository>
         <repository>
             <id>nexus</id>
-            <name>my Nexus</name>
-            <url>http://172.19.0.2:8081/repository/my-maven-test/</url>
+            <name>${nexusRepoName}</name>
+            <url>${nexusRepoUrl}</url>
         </repository>
         <!--
     <repository>
